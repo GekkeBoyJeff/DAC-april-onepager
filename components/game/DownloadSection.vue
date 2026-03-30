@@ -64,8 +64,8 @@
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold transition-all duration-250 hover:shadow-lg hover:shadow-primary-900/50 transform hover:scale-105"
               >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10.5 1.5H5.75A2.25 2.25 0 003.5 3.75v12.5A2.25 2.25 0 005.75 18.5h8.5a2.25 2.25 0 002.25-2.25V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
                 </svg>
                 Download voor Windows
               </a>
@@ -75,8 +75,8 @@
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-dark-700 hover:bg-dark-600 text-dark-100 font-semibold transition-all duration-250 border border-dark-600 hover:border-primary-600/50"
               >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M17.05 13.5c-.23.645-.56 1.26-.99 1.83.645.86 1.02 1.32 1.37 1.87.46.695.85 1.4 1 2.11M6.16 13.5c-.23.645-.56 1.26-.99 1.83-.645.86-1.02 1.32-1.37 1.87-.46.695-.85 1.4-1 2.11M15 10c.55-.55 1-1.35 1-2.25 0-1.93-1.57-3.5-3.5-3.5-1.93 0-3.5 1.57-3.5 3.5 0 .9.45 1.7 1 2.25M9 10c.55-.55 1-1.35 1-2.25 0-1.93-1.57-3.5-3.5-3.5C2.57 4.25 1 5.82 1 7.75c0 .9.45 1.7 1 2.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                 </svg>
                 Download voor macOS
               </a>
