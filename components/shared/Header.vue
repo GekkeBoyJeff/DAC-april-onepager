@@ -166,20 +166,19 @@ header {
 
 /* Mobile menu slide animation */
 .mobile-menu-enter-active {
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.15s ease, transform 0.15s ease;
 }
 .mobile-menu-leave-active {
-  transition: all 0.2s ease-in;
+  transition: opacity 0.1s ease, transform 0.1s ease;
 }
 .mobile-menu-enter-from,
 .mobile-menu-leave-to {
   opacity: 0;
-  max-height: 0;
   transform: translateY(-8px);
 }
 .mobile-menu-enter-to,
 .mobile-menu-leave-from {
   opacity: 1;
-  max-height: calc(100vh - 5rem);
+  transform: translateY(0);
 }
 </style>
