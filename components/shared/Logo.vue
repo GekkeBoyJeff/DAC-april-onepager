@@ -12,10 +12,6 @@ const logoPath = './logo.svg'
 
 <style scoped>
 img {
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-  -webkit-font-smoothing: antialiased;
-  backface-visibility: hidden;
-  transform: translateZ(0);
+  will-change: transform;
 }
 </style>
