@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-20 md:py-32 bg-dark-900 overflow-hidden">
+  <section id="faq" class="relative py-20 md:py-32 bg-dark-900 overflow-hidden">
     <div class="absolute inset-0 overflow-hidden">
       <div class="absolute -top-40 right-1/4 w-96 h-96 bg-primary-600/5 rounded-full blur-3xl animate-pulse-soft" />
     </div>

@@ -14,24 +14,24 @@
           <h4 class="font-semibold text-dark-200 mb-4">Community</h4>
           <ul class="space-y-2 text-sm text-dark-400">
             <li><a href="https://discord.gg/dutchanimecommunity" target="_blank" rel="noopener noreferrer" class="hover:text-primary-400 transition-colors">Discord</a></li>
-            <li><a href="/DAC-april-onepager/404" class="hover:text-primary-400 transition-colors">Forum</a></li>
-            <li><a href="/DAC-april-onepager/404" class="hover:text-primary-400 transition-colors">Evenementen</a></li>
+            <li><button @click="openFake('Forum')" class="hover:text-primary-400 transition-colors">Forum</button></li>
+            <li><button @click="openFake('Evenementen')" class="hover:text-primary-400 transition-colors">Evenementen</button></li>
           </ul>
         </nav>
         <nav aria-label="Informatie">
           <h4 class="font-semibold text-dark-200 mb-4">Informatie</h4>
           <ul class="space-y-2 text-sm text-dark-400">
-            <li><a href="/DAC-april-onepager/404" class="hover:text-primary-400 transition-colors">FAQ</a></li>
-            <li><a href="/DAC-april-onepager/404" class="hover:text-primary-400 transition-colors">Ondersteuning</a></li>
-            <li><a href="/DAC-april-onepager/404" class="hover:text-primary-400 transition-colors">Contact</a></li>
+            <li><a href="#faq" class="hover:text-primary-400 transition-colors">FAQ</a></li>
+            <li><button @click="openFake('Ondersteuning')" class="hover:text-primary-400 transition-colors">Ondersteuning</button></li>
+            <li><button @click="openFake('Contact')" class="hover:text-primary-400 transition-colors">Contact</button></li>
           </ul>
         </nav>
         <nav aria-label="Juridisch">
           <h4 class="font-semibold text-dark-200 mb-4">Juridisch</h4>
           <ul class="space-y-2 text-sm text-dark-400">
-            <li><a href="/DAC-april-onepager/404" class="hover:text-primary-400 transition-colors">Privacy</a></li>
-            <li><a href="/DAC-april-onepager/404" class="hover:text-primary-400 transition-colors">Voorwaarden</a></li>
-            <li><a href="/DAC-april-onepager/404" class="hover:text-primary-400 transition-colors">Cookies</a></li>
+            <li><button @click="openFake('Privacy')" class="hover:text-primary-400 transition-colors">Privacy</button></li>
+            <li><button @click="openFake('Voorwaarden')" class="hover:text-primary-400 transition-colors">Voorwaarden</button></li>
+            <li><button @click="openFake('Cookies')" class="hover:text-primary-400 transition-colors">Cookies</button></li>
           </ul>
         </nav>
       </div>
@@ -66,5 +66,7 @@
 </template>
 
 <script setup lang="ts">
-// Footer component
+const openFake = (label: string) => {
+  window.dispatchEvent(new CustomEvent('daic-fake-link', { detail: { label } }))
+}
 </script>

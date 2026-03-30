@@ -13,7 +13,7 @@ export const useScrollSpy = () => {
           }
         })
       },
-      { threshold: 0.2 }
+      { threshold: 0.05 }
     )
 
     // Observe all elements with animation classes (including within sections)

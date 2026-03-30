@@ -14,8 +14,9 @@
     <AmeliaFollower />
     <SocialProofTicker />
     <ScrollRevealHint />
+    <Fake404Overlay />
     <main class="flex flex-col">
-      <section class="hero-section relative md:min-h-screen flex items-center justify-center bg-gradient-to-b from-dark-900 via-dark-900 to-dark-800 overflow-hidden pt-10 md:pt-16">
+      <section id="home" class="hero-section relative md:min-h-screen flex items-center justify-center bg-gradient-to-b from-dark-900 via-dark-900 to-dark-800 overflow-hidden pt-10 md:pt-16">
         <div class="absolute inset-0 overflow-hidden">
           <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary-600/10 rounded-full blur-3xl" />
           <div class="absolute top-20 right-0 w-64 h-64 bg-accent-blue/5 rounded-full blur-3xl" />
@@ -119,6 +120,7 @@ import FakeNotification from '~/components/shared/FakeNotification.vue'
 import AmeliaFollower from '~/components/shared/AmeliaFollower.vue'
 import SocialProofTicker from '~/components/shared/SocialProofTicker.vue'
 import ScrollRevealHint from '~/components/shared/ScrollRevealHint.vue'
+import Fake404Overlay from '~/components/shared/Fake404Overlay.vue'
 
 // Show banner after April 1st 2026
 const isAfterAprilFools = computed(() => {

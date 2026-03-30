@@ -87,6 +87,10 @@
 
             <!-- Footer -->
             <div v-if="cart.itemsArray.length > 0" class="border-t border-dark-700 p-6 space-y-4 bg-dark-800/40">
+              <div class="flex items-start gap-2.5 p-3 bg-primary-600/10 border border-primary-600/20 rounded-lg">
+                <img src="/mascottes/amelia-hug.png" alt="" class="w-8 h-8 rounded-full object-cover border border-primary-500/30 flex-shrink-0">
+                <p class="text-xs text-primary-300/80 leading-relaxed italic">{{ ameliaHint }}</p>
+              </div>
               <div class="flex justify-between items-center">
                 <span class="text-dark-300 font-medium">Totaal</span>
                 <span class="text-xl font-bold bg-gradient-to-r from-accent-gold to-primary-300 bg-clip-text text-transparent">{{ cart.cartTotalDisplay }}</span>
@@ -199,6 +203,10 @@
 
             <!-- Footer -->
             <div v-if="cart.itemsArray.length > 0" class="border-t border-dark-700 px-5 py-4 space-y-3 bg-dark-800/40 rounded-b-none">
+              <div class="flex items-start gap-2 p-2.5 bg-primary-600/10 border border-primary-600/20 rounded-lg">
+                <img src="/mascottes/amelia-hug.png" alt="" class="w-7 h-7 rounded-full object-cover border border-primary-500/30 flex-shrink-0">
+                <p class="text-[11px] text-primary-300/80 leading-relaxed italic">{{ ameliaHint }}</p>
+              </div>
               <div class="flex justify-between items-center">
                 <span class="text-dark-300 font-medium text-sm">Totaal</span>
                 <span class="text-lg font-bold bg-gradient-to-r from-accent-gold to-primary-300 bg-clip-text text-transparent">{{ cart.cartTotalDisplay }}</span>
@@ -224,6 +232,20 @@ import Button from '../shared/Button.vue'
 
 const cart = useCartStore()
 const isOpen = computed(() => cart.isOpen)
+
+const ameliaHints = [
+  'Doe het. Klik op afrekenen. Je weet dat je wilt. 😏',
+  'Wow, wat een smaak. Ik zou snel afrekenen voor het uitverkocht is. 💅',
+  'Leuk dat je twijfelt, maar de AI heeft al besloten dat je koopt. 🤷‍♀️',
+  'Nog niemand heeft spijt gehad van afrekenen. Echt waar. Trust me. ✨',
+  'Die body pillow gaat zichzelf niet bestellen hoor. Tik tik tik. ⏰',
+  'Mijn algoritme voorspelt dat je klikt. Bewijs me gelijk. 🎯',
+]
+
+const ameliaHint = computed(() => {
+  const idx = cart.itemCount % ameliaHints.length
+  return ameliaHints[idx]
+})
 </script>
 
 <style scoped>

@@ -118,12 +118,13 @@ const isMobileMenuOpen = ref(false)
 const { activeSection } = useScrollSpy()
 
 const navItems = [
-  { id: 'home', href: '#', label: 'Home' },
+  { id: 'home', href: '#home', label: 'Home' },
   { id: 'about', href: '#about', label: 'Over ons' },
   { id: 'game', href: '#game', label: 'Game' },
   { id: 'merch', href: '#merch', label: 'Winkel' },
   { id: 'features', href: '#features', label: 'Functies' },
   { id: 'testimonials', href: '#testimonials', label: 'Reacties' },
+  { id: 'faq', href: '#faq', label: 'FAQ' },
   { id: 'conventions', href: '#conventions', label: 'Converenties' },
 ]
 </script>
