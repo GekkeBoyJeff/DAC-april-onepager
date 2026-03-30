@@ -19,7 +19,7 @@
         <li
           v-for="(testimonial, index) in testimonials"
           :key="testimonial.id"
-          class="relative p-6 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300"
+          class="relative p-6 rounded-lg bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300"
           :style="`animation: slideUp 0.6s ease-out forwards; animation-delay: ${0.1 * (index + 1)}s; opacity: 0`"
         >
           <div class="flex gap-1 mb-4" role="img" :aria-label="`${testimonial.rating} van 5 sterren`">

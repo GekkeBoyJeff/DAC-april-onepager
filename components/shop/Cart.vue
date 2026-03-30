@@ -52,7 +52,7 @@
                 <li
                   v-for="item in cart.itemsArray"
                   :key="item.product.id"
-                  class="flex gap-3 p-3 bg-dark-800/60 rounded-xl border border-dark-700 hover:border-primary-600/40 transition-all duration-300 group/item"
+                  class="flex gap-3 p-3 bg-dark-800/60 rounded-lg border border-dark-700 hover:border-primary-600/40 transition-all duration-300 group/item"
                 >
                   <div class="flex-1 min-w-0">
                     <h3 class="font-semibold text-dark-100 truncate group-hover/item:text-primary-300 transition-colors">{{ item.product.name }}</h3>
@@ -164,7 +164,7 @@
                 <li
                   v-for="item in cart.itemsArray"
                   :key="item.product.id"
-                  class="flex items-center gap-3 p-3 bg-dark-800/60 rounded-xl border border-dark-700"
+                  class="flex items-center gap-3 p-3 bg-dark-800/60 rounded-lg border border-dark-700"
                 >
                   <div class="flex-1 min-w-0">
                     <h3 class="font-semibold text-dark-100 text-sm truncate">{{ item.product.name }}</h3>

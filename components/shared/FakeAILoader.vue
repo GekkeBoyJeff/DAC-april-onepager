@@ -3,7 +3,7 @@
     <Transition name="loader">
       <div
         v-if="isVisible"
-        class="fixed bottom-20 md:bottom-6 left-4 right-4 md:left-6 md:right-auto z-40 md:max-w-xs bg-dark-800 border border-primary-600/40 rounded-xl p-4 shadow-2xl shadow-primary-900/30"
+        class="fixed bottom-20 md:bottom-6 left-4 right-4 md:left-6 md:right-auto z-40 md:max-w-xs bg-dark-800 border border-primary-600/40 rounded-lg p-4 shadow-2xl shadow-primary-900/30"
       >
         <div v-if="isLoading" class="flex items-center gap-3">
           <div class="w-5 h-5 border-2 border-primary-500 border-t-transparent rounded-full animate-spin" />

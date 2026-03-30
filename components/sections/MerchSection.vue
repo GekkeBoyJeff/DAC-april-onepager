@@ -25,7 +25,7 @@
           <MerchCard :product="product" />
         </div>
       </div>
-      <div class="mt-12 p-6 rounded-xl bg-dark-700/50 border border-dark-600 backdrop-blur-sm hover:border-primary-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-900/20 hover:bg-dark-700/70 animate-fade-in">
+      <div class="mt-12 p-6 rounded-lg bg-dark-700/50 border border-dark-600 backdrop-blur-sm hover:border-primary-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-900/20 hover:bg-dark-700/70 animate-fade-in">
         <p class="text-dark-300 text-center hover:text-dark-200 transition-colors duration-300">
           <span class="text-accent-blue font-semibold animate-bounce-slow">💳 Afrekenen:</span>
           Voeg items toe aan je winkelmand en klik op "Verder naar afrekenen" voor een speciale verrassing.

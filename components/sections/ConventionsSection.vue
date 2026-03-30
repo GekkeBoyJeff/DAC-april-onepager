@@ -20,7 +20,7 @@
         <article
           v-for="(event, index) in conventions"
           :key="event.slug"
-          class="rounded-2xl border border-primary-700/30 bg-dark-800/60 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20 hover:-translate-y-2 hover:scale-[1.02] group animate-slide-up cursor-pointer"
+          class="rounded-xl border border-primary-700/30 bg-dark-800/60 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20 hover:-translate-y-2 hover:scale-[1.02] group animate-slide-up cursor-pointer"
           :style="{ 'animation-delay': `${0.2 + index * 0.1}s` }"
         >
           <div class="h-32 md:h-36 bg-dark-900 overflow-hidden relative">

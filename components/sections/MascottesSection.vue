@@ -21,11 +21,11 @@
         <article
           v-for="(item, index) in mascottes"
           :key="item.src"
-          class="group rounded-2xl border border-primary-700/30 bg-dark-800/60 backdrop-blur-sm p-4 transition-all duration-300 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20 hover:-translate-y-3 cursor-pointer animate-fade-in"
+          class="group rounded-xl border border-primary-700/30 bg-dark-800/60 backdrop-blur-sm p-4 transition-all duration-300 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20 hover:-translate-y-3 cursor-pointer animate-fade-in"
           :style="{ 'animation-delay': `${0.2 + index * 0.08}s` }"
         >
           <figure>
-            <div class="aspect-[4/5] rounded-xl bg-dark-900/70 border border-dark-700 overflow-hidden group-hover:border-primary-500/40 transition-all duration-300 relative">
+            <div class="aspect-[4/5] rounded-lg bg-dark-900/70 border border-dark-700 overflow-hidden group-hover:border-primary-500/40 transition-all duration-300 relative">
               <div class="absolute inset-0 bg-gradient-to-t from-primary-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
               <img
                 :src="item.src"

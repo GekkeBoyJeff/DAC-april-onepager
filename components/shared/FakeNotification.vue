@@ -4,7 +4,7 @@
       <div
         v-if="isVisible"
         :class="[
-          'fixed z-50 bg-dark-800 border border-primary-500/40 shadow-2xl shadow-black/40 overflow-hidden rounded-xl',
+          'fixed z-50 bg-dark-800 border border-primary-500/40 shadow-2xl shadow-black/40 overflow-hidden rounded-lg',
           isMobile
             ? 'top-[88px] left-3 right-3'
             : 'top-6 right-6 max-w-sm'

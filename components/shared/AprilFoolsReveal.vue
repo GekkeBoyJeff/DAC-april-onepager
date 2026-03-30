@@ -10,7 +10,7 @@
           <div v-for="i in 50" :key="i" class="confetti-piece" :style="confettiStyle(i)" />
         </div>
 
-        <div class="relative z-10 max-w-md w-full mx-4 bg-dark-800 border border-primary-500/40 rounded-2xl p-8 text-center space-y-6 shadow-2xl shadow-primary-600/20">
+        <div class="relative z-10 max-w-md w-full mx-4 bg-dark-800 border border-primary-500/40 rounded-xl p-8 text-center space-y-6 shadow-2xl shadow-primary-600/20">
           <div class="text-6xl">🎉</div>
 
           <h2 class="text-3xl font-display font-bold bg-gradient-to-r from-primary-300 via-accent-blue to-accent-gold bg-clip-text text-transparent">
@@ -78,18 +78,12 @@ const confettiStyle = (i: number) => {
   }
 }
 
-const show = () => {
-  isVisible.value = true
-}
-
 const close = () => {
   isVisible.value = false
 }
 
-// Listen for rickroll event
 const handleRickroll = () => {
-  // Small delay so the rickroll tab opens first
-  setTimeout(show, 500)
+  isVisible.value = true
 }
 
 onMounted(() => {

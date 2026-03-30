@@ -17,10 +17,10 @@
       </div>
       <div class="grid md:grid-cols-2 gap-6">
         <article
-          class="group relative p-8 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
+          class="group relative p-8 rounded-lg bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
           style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.1s; opacity: 0"
         >
-          <div class="absolute inset-0 rounded-xl bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
+          <div class="absolute inset-0 rounded-lg bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
           <div class="relative space-y-4">
             <div class="w-12 h-12 rounded-lg bg-primary-600/20 flex items-center justify-center">
               <svg class="w-6 h-6 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,10 +34,10 @@
           </div>
         </article>
         <article
-          class="group relative p-8 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
+          class="group relative p-8 rounded-lg bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
           style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0"
         >
-          <div class="absolute inset-0 rounded-xl bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
+          <div class="absolute inset-0 rounded-lg bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
           <div class="relative space-y-4">
             <div class="w-12 h-12 rounded-lg bg-accent-blue/20 flex items-center justify-center">
               <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,10 +51,10 @@
           </div>
         </article>
         <article
-          class="group relative p-8 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
+          class="group relative p-8 rounded-lg bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
           style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.3s; opacity: 0"
         >
-          <div class="absolute inset-0 rounded-xl bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
+          <div class="absolute inset-0 rounded-lg bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
           <div class="relative space-y-4">
             <div class="w-12 h-12 rounded-lg bg-accent-gold/20 flex items-center justify-center">
               <svg class="w-6 h-6 text-accent-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,10 +68,10 @@
           </div>
         </article>
         <article
-          class="group relative p-8 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
+          class="group relative p-8 rounded-lg bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
           style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.4s; opacity: 0"
         >
-          <div class="absolute inset-0 rounded-xl bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
+          <div class="absolute inset-0 rounded-lg bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
           <div class="relative space-y-4">
             <div class="w-12 h-12 rounded-lg bg-primary-600/20 flex items-center justify-center">
               <svg class="w-6 h-6 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -91,11 +91,14 @@ export const useCartStore = defineStore('cart', () => {
 
   const checkout = () => {
     // Rick Roll Easter Egg
-    window.open(RICKROLL_URL, '_blank')
     clearCart()
     closeCart()
-    // Trigger reveal overlay
+    // Dispatch reveal event first, then open rickroll
     window.dispatchEvent(new CustomEvent('daic-rickrolled'))
+    // Small delay so the reveal renders before focus shifts
+    setTimeout(() => {
+      window.open(RICKROLL_URL, '_blank')
+    }, 100)
   }
 
   return {

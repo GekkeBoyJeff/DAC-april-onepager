@@ -57,8 +57,8 @@
           </Button>
         </div>
         <div class="relative animate-float" style="animation-delay: 0.2s">
-          <div class="absolute -inset-4 bg-gradient-to-r from-primary-600/10 to-accent-blue/10 rounded-2xl blur-xl animate-glow" />
-          <div class="relative bg-dark-800/50 border border-primary-600/30 rounded-2xl p-8 backdrop-blur-sm hover:border-primary-500/60 transition-all duration-300 hover:shadow-lg hover:shadow-primary-600/20">
+          <div class="absolute -inset-4 bg-gradient-to-r from-primary-600/10 to-accent-blue/10 rounded-xl blur-xl animate-glow" />
+          <div class="relative bg-dark-800/50 border border-primary-600/30 rounded-xl p-8 backdrop-blur-sm hover:border-primary-500/60 transition-all duration-300 hover:shadow-lg hover:shadow-primary-600/20">
             <div class="space-y-4 animate-scale-in" style="animation-delay: 0.4s">
               <div class="text-accent-gold font-semibold text-sm animate-bounce-slow">✨ AI-first aanpak</div>
               <h3 class="text-2xl font-bold text-dark-100">De toekomst van anime communities</h3>

@@ -15,7 +15,7 @@
     <SocialProofTicker />
     <ScrollRevealHint />
     <main class="flex flex-col">
-      <section class="relative min-h-[80vh] md:min-h-screen flex items-center justify-center bg-gradient-to-b from-dark-900 via-dark-900 to-dark-800 overflow-hidden pt-10 md:pt-16">
+      <section class="hero-section relative md:min-h-screen flex items-center justify-center bg-gradient-to-b from-dark-900 via-dark-900 to-dark-800 overflow-hidden pt-10 md:pt-16">
         <div class="absolute inset-0 overflow-hidden">
           <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary-600/10 rounded-full blur-3xl" />
           <div class="absolute top-20 right-0 w-64 h-64 bg-accent-blue/5 rounded-full blur-3xl" />
@@ -23,9 +23,9 @@
         </div>
 
         <div class="container mx-auto px-4 relative z-10">
-          <div class="max-w-4xl mx-auto text-center space-y-6 md:space-y-8 py-8 md:py-20">
+          <div class="hero-content max-w-4xl mx-auto text-center space-y-6 md:space-y-8 py-8 md:py-20">
             <div class="flex justify-center mb-4 md:mb-8 animate-fade-in">
-              <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-600/20 to-accent-blue/20 flex items-center justify-center border border-primary-600/30 backdrop-blur-sm">
+              <div class="w-20 h-20 rounded-xl bg-gradient-to-br from-primary-600/20 to-accent-blue/20 flex items-center justify-center border border-primary-600/30 backdrop-blur-sm">
                 <Logo class="w-12 h-12" />
               </div>
             </div>
@@ -185,5 +185,42 @@ const isAfterAprilFools = computed(() => {
 
 .animate-bounce {
   animation: bounce 2s infinite;
+}
+
+/* Hero: sensible height on portrait mobile, auto on landscape */
+.hero-section {
+  min-height: 80vh;
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .hero-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 0.75rem;
+  }
+
+  /* Smaller title in landscape */
+  .hero-section h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  /* Hide non-essential elements */
+  .hero-section .animate-bounce,
+  .hero-section .animate-fade-in:first-child {
+    display: none;
+  }
+
+  /* Tighter padding on all sections */
+  :deep(section) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 </style>
