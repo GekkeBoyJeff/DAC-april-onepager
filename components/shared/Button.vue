@@ -1,14 +1,20 @@
 <template>
-  <button
+  <component
+    :is="props.href ? 'a' : 'button'"
+    :href="props.href || undefined"
+    :target="props.href && props.external ? '_blank' : undefined"
+    :rel="props.href && props.external ? 'noopener noreferrer' : undefined"
     :class="[
-      'inline-flex items-center justify-center rounded-lg font-medium transition-all duration-250 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500',
+      'inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 relative overflow-hidden group',
       sizeClasses,
       variantClasses,
     ]"
     v-bind="$attrs"
   >
+    <span class="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-300 rounded-lg" />
+
     <slot />
-  </button>
+  </component>
 </template>
 
 <script setup lang="ts">
@@ -17,11 +23,15 @@ import { computed } from 'vue'
 interface Props {
   variant?: 'primary' | 'secondary' | 'outline' | 'danger'
   size?: 'sm' | 'md' | 'lg'
+  href?: string
+  external?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
   variant: 'primary',
   size: 'md',
+  href: undefined,
+  external: false,
 })
 
 const sizeClasses = computed(() => {

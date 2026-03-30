@@ -1,12 +1,10 @@
 <template>
   <section id="features" class="relative py-20 md:py-32 bg-dark-900">
-    <!-- Background Pattern -->
     <div class="absolute inset-0 overflow-hidden">
       <div class="absolute top-0 left-1/4 w-64 h-64 bg-primary-600/5 rounded-full blur-3xl" />
     </div>
 
     <div class="container mx-auto px-4 relative z-10">
-      <!-- Header -->
       <div class="text-center mb-16 animate-fade-in">
         <h2 class="text-4xl md:text-5xl font-display font-bold mb-4">
           <span class="bg-gradient-to-r from-primary-300 to-accent-blue bg-clip-text text-transparent">
@@ -17,11 +15,8 @@
           Ervaar communityfuncties voor animefans, opnieuw ontworpen met kunstmatige intelligentie
         </p>
       </div>
-
-      <!-- Features Grid -->
       <div class="grid md:grid-cols-2 gap-6">
-        <!-- Feature 1 -->
-        <div
+        <article
           class="group relative p-8 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
           style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.1s; opacity: 0"
         >
@@ -37,10 +32,8 @@
               Onze AI-systemen zorgen voor een veilige en toegankelijke plek voor alle animefans met intelligente contentfiltering.
             </p>
           </div>
-        </div>
-
-        <!-- Feature 2 -->
-        <div
+        </article>
+        <article
           class="group relative p-8 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
           style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0"
         >
@@ -56,10 +49,8 @@
               Ontdek je volgende favoriete anime via machine-learningalgoritmes die jouw voorkeuren echt begrijpen.
             </p>
           </div>
-        </div>
-
-        <!-- Feature 3 -->
-        <div
+        </article>
+        <article
           class="group relative p-8 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
           style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.3s; opacity: 0"
         >
@@ -75,10 +66,8 @@
               Krijg direct analyses over trending anime, communitygevoel en opkomende favorieten op basis van neurale netwerken.
             </p>
           </div>
-        </div>
-
-        <!-- Feature 4 -->
-        <div
+        </article>
+        <article
           class="group relative p-8 rounded-xl bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
           style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.4s; opacity: 0"
         >
@@ -94,7 +83,7 @@
               Kom in contact met communityleden met dezelfde interesses via AI-gestuurde suggesties.
             </p>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>

@@ -2,7 +2,7 @@
   <img
     :src="logoPath"
     alt="DAIC Logo"
-    class="block w-full h-full object-contain"
+    class="block w-full h-full object-contain rounded-full"
   />
 </template>
 

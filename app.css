@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Pause all entrance animations by default, run when animate-in class added */
+[class*="animate-slide-up"],
+[class*="animate-slide-down"],
+[class*="animate-slide-left"],
+[class*="animate-slide-right"],
+[class*="animate-fade-in"],
+[class*="animate-scale-in"],
+[class*="animate-rotate-in"],
+[class*="animate-flip"] {
+  animation-play-state: paused;
+}
+
+[class*="animate-slide-up"].animate-in,
+[class*="animate-slide-down"].animate-in,
+[class*="animate-slide-left"].animate-in,
+[class*="animate-slide-right"].animate-in,
+[class*="animate-fade-in"].animate-in,
+[class*="animate-scale-in"].animate-in,
+[class*="animate-rotate-in"].animate-in,
+[class*="animate-flip"].animate-in {
+  animation-play-state: running;
+}

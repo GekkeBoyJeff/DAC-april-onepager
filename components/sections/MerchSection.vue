@@ -1,38 +1,33 @@
 <template>
   <section id="merch" class="relative py-20 md:py-32 bg-dark-800">
-    <!-- Background -->
     <div class="absolute inset-0 overflow-hidden">
-      <div class="absolute top-0 right-1/4 w-96 h-96 bg-accent-blue/5 rounded-full blur-3xl" />
+      <div class="absolute top-0 right-1/4 w-96 h-96 bg-accent-blue/5 rounded-full blur-3xl animate-pulse-soft" />
     </div>
 
     <div class="container mx-auto px-4 relative z-10">
-      <!-- Header -->
-      <div class="text-center mb-12 animate-fade-in">
-        <h2 class="text-4xl md:text-5xl font-display font-bold mb-4">
-          <span class="bg-gradient-to-r from-accent-gold to-primary-300 bg-clip-text text-transparent">
+      <div class="text-center mb-12 animate-scale-in">
+        <h2 class="text-4xl md:text-5xl font-display font-bold mb-4 animate-slide-up">
+          <span class="bg-gradient-to-r from-accent-gold to-primary-300 bg-clip-text text-transparent inline-block animate-gradient-shift" style="background-size: 200% 200%">
             Officiele DAIC shop
           </span>
         </h2>
-        <p class="text-lg text-dark-300 mb-6">
+        <p class="text-lg text-dark-300 mb-6 animate-slide-up" style="animation-delay: 0.1s">
           Welkom in onze nieuwe website en webshop! Steun de community met exclusieve Amelia-merchandise.
         </p>
       </div>
-
-      <!-- Products Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-max">
         <div
           v-for="(product, index) in products"
           :key="product.id"
-          :style="`animation: scaleIn 0.5s ease-out forwards; animation-delay: ${0.1 * (index + 1)}s; opacity: 0`"
+          class="animate-slide-up"
+          :style="{ 'animation-delay': `${0.2 + index * 0.08}s` }"
         >
           <MerchCard :product="product" />
         </div>
       </div>
-
-      <!-- Info Box -->
-      <div class="mt-12 p-6 rounded-xl bg-dark-700/50 border border-dark-600 backdrop-blur-sm">
-        <p class="text-dark-300 text-center">
-          <span class="text-accent-blue font-semibold">💳 Afrekenen:</span>
+      <div class="mt-12 p-6 rounded-xl bg-dark-700/50 border border-dark-600 backdrop-blur-sm hover:border-primary-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-900/20 hover:bg-dark-700/70 animate-fade-in">
+        <p class="text-dark-300 text-center hover:text-dark-200 transition-colors duration-300">
+          <span class="text-accent-blue font-semibold animate-bounce-slow">💳 Afrekenen:</span>
           Voeg items toe aan je winkelmand en klik op "Verder naar afrekenen" voor een speciale verrassing.
         </p>
       </div>

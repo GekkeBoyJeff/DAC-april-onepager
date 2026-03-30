@@ -1,6 +1,5 @@
 <template>
   <section id="game" class="relative py-20 md:py-32 bg-gradient-to-b from-dark-800 to-dark-900 overflow-hidden">
-    <!-- Background Effects -->
     <div class="absolute inset-0 overflow-hidden">
       <div class="absolute top-0 right-0 w-96 h-96 bg-accent-blue/5 rounded-full blur-3xl" />
       <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-600/5 rounded-full blur-3xl" />
@@ -8,7 +7,6 @@
 
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-3xl mx-auto">
-        <!-- Game Info -->
         <div class="space-y-8 animate-fade-in">
           <div>
             <span class="text-sm font-semibold text-accent-blue uppercase tracking-wider">Speciale release</span>
@@ -57,8 +55,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Download Section -->
           <div class="space-y-3">
             <p class="text-sm text-dark-400">💾 Download voor Windows of macOS</p>
             <div class="flex gap-3 flex-wrap">
@@ -86,8 +82,6 @@
               </a>
             </div>
           </div>
-
-          <!-- Price -->
           <div class="pt-4 border-t border-dark-700">
             <p class="text-sm text-dark-400 mb-2">Prijs</p>
             <p class="text-3xl font-bold text-primary-300">€3,00</p>

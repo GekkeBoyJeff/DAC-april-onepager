@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   // Use project root as source directory so root-level app.vue/pages/components are used.
   srcDir: '.',
   app: {
+    baseURL: '/DAC-april-onepager/',
     head: {
       title: 'Dutch AI Anime Community - DAIC',
       meta: [
@@ -16,9 +17,9 @@ export default defineNuxtConfig({
       ],
     },
   },
-  
+
   devtools: { enabled: true },
-  
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
@@ -26,22 +27,7 @@ export default defineNuxtConfig({
 
   css: ['./app.css'],
 
-  // GitHub Pages configuration
-  routeRules: {
-    '/**': { prerender: true },
-  },
-
-  nitro: {
-    prerender: {
-      routes: ['/'],
-      crawlLinks: false,
-    },
-  },
-
-  // Set base path for GitHub Pages (adjust if using subdirectory)
-  base: '/DAC-april-onepager/',
-
-  // SPA mode for interactive features like cart
+  // SPA mode for GitHub Pages + interactive features like cart
   ssr: false,
 
   typescript: {
