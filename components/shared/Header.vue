@@ -62,7 +62,7 @@
     </div>
     <div
       v-if="isMobileMenuOpen"
-      class="md:hidden border-t border-primary-700/30 bg-dark-900/95 backdrop-blur-md animate-slide-down"
+      class="md:hidden border-t border-primary-700/30 bg-dark-900/95 backdrop-blur-md"
     >
       <nav class="container mx-auto px-4 py-4 flex flex-col gap-2">
         <a
@@ -70,7 +70,7 @@
           :key="item.href"
           :href="item.href"
           :class="[
-            'px-4 py-2.5 rounded-lg transition-all duration-300 relative group animate-slide-up text-sm font-medium',
+            'px-4 py-2.5 rounded-lg transition-all duration-300 relative group text-sm font-medium',
             activeSection === item.id
               ? 'bg-primary-600/20 text-primary-300'
               : 'text-dark-200 hover:bg-dark-800 hover:text-primary-300'
@@ -84,8 +84,7 @@
           href="https://discord.gg/dutchanimecommunity"
           target="_blank"
           rel="noopener noreferrer"
-          class="px-4 py-2.5 rounded-lg bg-primary-600/20 border border-primary-600/40 text-primary-300 hover:bg-primary-600/40 transition-all duration-300 text-sm font-medium flex items-center gap-2 animate-slide-up"
-          :style="{ 'animation-delay': '0.2s' }"
+          class="px-4 py-2.5 rounded-lg bg-primary-600/20 border border-primary-600/40 text-primary-300 hover:bg-primary-600/40 transition-all duration-300 text-sm font-medium flex items-center gap-2"
         >
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
             <path d="M20.317 4.492c-1.53-.742-3.17-1.286-4.885-1.577a.075.075 0 0 0-.079.037c-.211.375-.445.865-.608 1.25a18.566 18.566 0 0 0-5.487 0c-.163-.385-.397-.875-.609-1.25a.077.077 0 0 0-.079-.037A19.738 19.738 0 0 0 3.677 4.492a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.294.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.062 0a.075.075 0 0 1 .079.009c.12.098.246.198.373.295a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.77 1.364 1.225 1.994a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.057c.5-4.718-.838-8.812-3.549-12.54a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-.965-2.157-2.156 0-1.193.966-2.157 2.157-2.157 1.192 0 2.157.964 2.157 2.157 0 1.19-.965 2.157-2.157 2.157zm7.975 0c-1.183 0-2.157-.965-2.157-2.156 0-1.193.966-2.157 2.157-2.157 1.192 0 2.157.964 2.157 2.157 0 1.19-.965 2.157-2.157 2.157z" />
