@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group relative bg-gradient-to-br from-dark-800 to-dark-900 rounded-lg border border-dark-700 overflow-hidden transition-all duration-300 md:hover:border-primary-600/50 md:hover:shadow-xl md:hover:shadow-primary-900/40 md:hover:-translate-y-2 md:hover:scale-[1.02] animate-fade-in hover:cursor-hook"
+    class="group relative bg-gradient-to-br from-dark-800 to-dark-900 rounded-lg border border-dark-700 transition-all duration-300 md:hover:border-primary-600/50 md:hover:shadow-xl md:hover:shadow-primary-900/40 md:hover:-translate-y-2 md:hover:scale-[1.02] animate-fade-in hover:cursor-hook"
   >
     <div class="absolute -inset-1 bg-gradient-to-r from-primary-600/0 via-primary-600/0 to-primary-600/0 md:group-hover:from-primary-600/20 md:group-hover:to-accent-blue/20 rounded-lg blur-lg opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 -z-10" />
     <div class="relative h-56 bg-dark-700 overflow-hidden flex items-center justify-center">
