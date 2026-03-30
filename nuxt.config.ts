@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Welcome to the Dutch AI Anime Community - An AI-first anime community experience.' },
+        { name: 'description', content: 'Welkom bij de Dutch AI Anime Community - De AI FIRST anime-community van Nederland.' },
         { name: 'robots', content: 'noindex, nofollow, noarchive' }, // Prevent indexing and crawling
       ],
       link: [
