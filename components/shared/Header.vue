@@ -1,17 +1,17 @@
 <template>
   <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-dark-900/80 border-b border-primary-700/30">
-    <div class="container mx-auto px-3 sm:px-4 h-16">
+    <div class="container mx-auto px-3 sm:px-4 h-20 sm:h-22">
       <div class="grid h-full grid-cols-[auto_1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center gap-2 sm:gap-3">
         <!-- Logo -->
-        <NuxtLink to="/" class="justify-self-start flex items-center gap-1.5 sm:gap-2 group min-w-0">
-          <Logo class="w-5 h-5 sm:w-6 sm:h-6" />
-          <span class="font-display font-bold text-sm sm:text-base bg-gradient-to-r from-primary-400 to-accent-blue bg-clip-text text-transparent leading-none truncate">
+        <a href="https://gekkeboyjeff.github.io/DAC-april-onepager" class="justify-self-start flex items-center gap-2.5 sm:gap-3 group min-w-0">
+          <Logo class="w-10 h-10 sm:w-12 sm:h-12" />
+          <span class="font-display font-bold text-xl sm:text-2xl bg-gradient-to-r from-primary-400 to-accent-blue bg-clip-text text-transparent leading-none truncate">
             DAIC
           </span>
           <span class="hidden xl:inline-flex px-1.5 py-0.5 text-[8px] font-semibold tracking-wider rounded-full bg-primary-600/20 text-primary-300 border border-primary-500/30 whitespace-nowrap">
             AI FIRST
           </span>
-        </NuxtLink>
+        </a>
 
         <!-- Navigation -->
         <div class="hidden md:flex justify-self-center">

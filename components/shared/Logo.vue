@@ -2,7 +2,7 @@
   <img
     :src="logoPath"
     alt="DAIC Logo"
-    class="block max-w-full max-h-full object-contain"
+    class="block w-full h-full object-contain"
   />
 </template>
 
@@ -12,6 +12,10 @@ const logoPath = './logo.svg'
 
 <style scoped>
 img {
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 </style>

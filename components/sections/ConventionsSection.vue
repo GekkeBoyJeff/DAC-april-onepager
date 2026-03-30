@@ -12,7 +12,7 @@
           </span>
         </h2>
         <p class="text-base text-dark-300 max-w-2xl mx-auto">
-          Dit zijn de events waar DAIC dit jaar zichtbaar is met community-activiteiten.
+          Ontmoet de DAIC-community en ervaar de toekomst van anime: Amelia AI en ons baanbrekend dating sim game.
         </p>
       </div>
 
@@ -46,19 +46,19 @@ const conventions = [
     slug: 'animecon-2026',
     name: 'AnimeCon 2026',
     banner: './conventions/animecon-2026/banner.png',
-    description: 'Meetups, cosplay en community-momenten met DAIC-leden.',
+    description: 'Live Amelia AI showcase en demo van ons nieuwe dating sim game. Ontmoet de makers en ervaar de revolutie.',
   },
   {
     slug: 'dcc-2026',
     name: 'Dutch Comic Con 2026',
     banner: './conventions/dcc-2026/banner.svg',
-    description: 'Panels, standbezoeken en anime-talks vanuit de community.',
+    description: 'Game launch event: speelbare demo van Amelia AI Dating Sim. Eerste preview exclusief voor DCC-bezoekers.',
   },
   {
     slug: 'hmia-2026',
     name: 'HMIA 2026',
     banner: './conventions/hmia-2026/banner.png',
-    description: 'Gezamenlijke community-uitjes en eventverslaggeving op locatie.',
+    description: 'Community celebration: ontmoet DAIC-leden, speel het spel en ontdek hoe Amelia AI anime-fans verandert.',
   },
 ]
 </script>
