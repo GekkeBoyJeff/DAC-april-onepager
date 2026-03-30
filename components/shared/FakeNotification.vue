@@ -7,7 +7,7 @@
       >
         <div class="p-4 flex items-start gap-3">
           <img
-            src="./mascottes/amelia-beer-alt.png"
+            src="/mascottes/amelia-beer-alt.png"
             alt="Amelia"
             class="w-10 h-10 rounded-full object-cover border-2 border-primary-500/50 flex-shrink-0"
           >
