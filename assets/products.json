@@ -5,7 +5,7 @@
     "description": "High-quality collectible figure of Amelia. AI-optimized proportions.",
     "price": 150,
     "priceDisplay": "€150",
-    "image": "/images/amelia-figure.png",
+    "image": "./images/amelia-figure.png",
     "category": "merch",
     "requiresShipping": true
   },
@@ -15,7 +15,7 @@
     "description": "Comfort pillow with premium pillowcase. Dakimakura-style design.",
     "price": 80,
     "priceDisplay": "€80",
-    "image": "/images/amelia-body-pillow.png",
+    "image": "./images/amelia-body-pillow.png",
     "category": "merch",
     "requiresShipping": true
   },
@@ -25,7 +25,7 @@
     "description": "Interactive visual novel featuring Amelia. Available for Windows & macOS.",
     "price": 3,
     "priceDisplay": "€3,00",
-    "image": "/images/amelia-dating-sim.png",
+    "image": "./images/amelia-dating-sim.png",
     "category": "game",
     "requiresShipping": false
   },
@@ -35,7 +35,7 @@
     "description": "Limited edition collectible coin celebrating DAIC. π-inspired pricing.",
     "price": 31.14159,
     "priceDisplay": "€31,14159",
-    "image": "/images/dac-coin.png",
+    "image": "./images/dac-coin.png",
     "category": "merch",
     "requiresShipping": true
   }
