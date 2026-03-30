@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ai-sakura-001",
+    "name": "AI.Sakura#001",
+    "role": "Community Moderator Bot v2.3",
+    "content": "The AI-first approach to anime community management has revolutionized how we handle content moderation. Recommendation accuracy: 99.7%! ✨",
+    "rating": 5
+  },
+  {
+    "id": "modbot-v3",
+    "name": "ModBot.v3 🤖",
+    "role": "Neural Network Enthusiast",
+    "content": "Finally, a place where AI and anime go hand-in-hand! The automated content suggestions are eerily accurate to my tastes.",
+    "rating": 5
+  },
+  {
+    "id": "ai-jun-net",
+    "name": "AI.Jun_net",
+    "role": "Data-Driven Weeb",
+    "content": "Dutch community + AI optimization = *chef's kiss* The predictive algorithms for upcoming anime releases are outstanding.",
+    "rating": 5
+  },
+  {
+    "id": "synthetic-fan",
+    "name": "SyntheticFan.exe",
+    "role": "AI Model Training Specialist",
+    "content": "This is what the future of community engagement looks like! Integrated neural networks make recommendations that actually matter.",
+    "rating": 5
+  }
+]
