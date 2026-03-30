@@ -2,7 +2,7 @@
   <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-dark-900/80 border-b border-primary-700/30">
     <div class="container mx-auto px-4 h-20 sm:h-22">
       <div class="h-full flex items-center justify-between gap-8">
-        <a href="/" class="flex items-center gap-2 sm:gap-3 group min-w-0 hover:opacity-80 transition-opacity duration-300">
+        <a href="#" class="flex items-center gap-2 sm:gap-3 group min-w-0 hover:opacity-80 transition-opacity duration-300">
           <Logo class="w-10 h-10 sm:w-12 sm:h-12 group-hover:animate-pulse-glow transition-all duration-300" />
           <span class="font-display font-bold text-xl sm:text-2xl bg-gradient-to-r from-primary-400 to-accent-blue bg-clip-text text-transparent leading-none truncate group-hover:from-primary-300 group-hover:to-accent-gold transition-all duration-300">
             DAIC
