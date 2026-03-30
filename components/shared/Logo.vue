@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-const logoPath = '/logo.svg'
+const logoPath = './logo.svg'
 </script>
 
 <style scoped>

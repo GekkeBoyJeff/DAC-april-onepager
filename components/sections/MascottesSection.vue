@@ -41,27 +41,27 @@
 <script setup lang="ts">
 const mascottes = [
   {
-    src: '/mascottes/amelia.png',
+    src: './mascottes/amelia.png',
     alt: 'Amelia standaard pose',
     label: 'Amelia - Standaard',
   },
   {
-    src: '/mascottes/amelia-v2.png',
+    src: './mascottes/amelia-v2.png',
     alt: 'Amelia versie 2',
     label: 'Amelia - Variant 2',
   },
   {
-    src: '/mascottes/amelia-hug.png',
+    src: './mascottes/amelia-hug.png',
     alt: 'Amelia hug pose',
     label: 'Amelia - Hug pose',
   },
   {
-    src: '/mascottes/amelia-beer.png',
+    src: './mascottes/amelia-beer.png',
     alt: 'Amelia beer pose',
     label: 'Amelia - Beer pose',
   },
   {
-    src: '/mascottes/amelia-beer-alt.png',
+    src: './mascottes/amelia-beer-alt.png',
     alt: 'Amelia alternate beer pose',
     label: 'Amelia - Beer alternate',
   },

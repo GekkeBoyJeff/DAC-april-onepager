@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         { name: 'robots', content: 'noindex, nofollow, noarchive' }, // Prevent indexing and crawling
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' },
+        { rel: 'icon', type: 'image/svg+xml', href: './logo.svg' },
       ],
     },
   },

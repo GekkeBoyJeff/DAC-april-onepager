@@ -45,19 +45,19 @@ const conventions = [
   {
     slug: 'animecon-2026',
     name: 'AnimeCon 2026',
-    banner: '/conventions/animecon-2026/banner.png',
+    banner: './conventions/animecon-2026/banner.png',
     description: 'Meetups, cosplay en community-momenten met DAIC-leden.',
   },
   {
     slug: 'dcc-2026',
     name: 'Dutch Comic Con 2026',
-    banner: '/conventions/dcc-2026/banner.svg',
+    banner: './conventions/dcc-2026/banner.svg',
     description: 'Panels, standbezoeken en anime-talks vanuit de community.',
   },
   {
     slug: 'hmia-2026',
     name: 'HMIA 2026',
-    banner: '/conventions/hmia-2026/banner.png',
+    banner: './conventions/hmia-2026/banner.png',
     description: 'Gezamenlijke community-uitjes en eventverslaggeving op locatie.',
   },
 ]
