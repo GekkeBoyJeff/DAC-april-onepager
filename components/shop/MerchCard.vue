@@ -34,9 +34,13 @@
         {{ product.description }}
       </p>
       <div class="flex items-end justify-between pt-2">
-        <div @mouseenter="onPriceHover" @mouseleave="onPriceLeave">
+        <div @mouseenter="onPriceInteract" @click="onPriceInteract">
           <p class="text-xs text-dark-500 mb-1">Prijs</p>
-          <p class="text-xl font-bold bg-gradient-to-r from-accent-gold to-accent-blue bg-clip-text text-transparent group-hover:animate-gradient-shift transition-all duration-300" style="background-size: 200% 200%">
+          <p
+            class="text-xl font-bold bg-gradient-to-r from-accent-gold to-accent-blue bg-clip-text text-transparent group-hover:animate-gradient-shift transition-all duration-300"
+            :class="{ 'scale-110': justChanged }"
+            style="background-size: 200% 200%"
+          >
             {{ displayPrice }}
           </p>
         </div>
@@ -68,21 +72,21 @@ const props = defineProps<Props>()
 const cart = useCartStore()
 const isNsfwFigure = props.product.id === 'amelia-figure'
 const displayPrice = ref(props.product.priceDisplay)
-let hoverCount = 0
+const justChanged = ref(false)
+let interactCount = 0
 
-const onPriceHover = () => {
-  hoverCount++
-  if (hoverCount >= 2) {
-    const inflated = props.product.price * (1 + hoverCount * 0.15)
+const onPriceInteract = () => {
+  interactCount++
+  if (interactCount >= 2) {
+    const inflated = props.product.price * (1 + interactCount * 0.15)
     displayPrice.value = new Intl.NumberFormat('nl-NL', {
       style: 'currency',
       currency: 'EUR',
     }).format(inflated)
+    // Brief scale pop on change
+    justChanged.value = true
+    setTimeout(() => { justChanged.value = false }, 300)
   }
-}
-
-const onPriceLeave = () => {
-  // Keep the inflated price — no going back!
 }
 
 const addToCart = () => {

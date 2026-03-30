@@ -3,7 +3,12 @@
     <Transition name="notif">
       <div
         v-if="isVisible"
-        class="fixed top-6 right-6 z-50 max-w-sm bg-dark-800 border border-primary-500/40 rounded-xl shadow-2xl shadow-black/40 overflow-hidden"
+        :class="[
+          'fixed z-50 bg-dark-800 border border-primary-500/40 shadow-2xl shadow-black/40 overflow-hidden rounded-xl',
+          isMobile
+            ? 'top-[88px] left-3 right-3'
+            : 'top-6 right-6 max-w-sm'
+        ]"
       >
         <div class="p-4 flex items-start gap-3">
           <img
@@ -41,11 +46,12 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const isVisible = ref(false)
 const progressWidth = ref('100%')
 const message = ref('')
+const isMobile = ref(false)
 
 const messages = [
   'Hoi! Ik zag dat je naar de merch keek... wil je erover praten? 👉👈',
   'Psst, ik heb berekend dat je 94% kans hebt om de body pillow te kopen. Niet doen tenzij... 😏',
-  'Mijn AI-sensoren detecteren dat je al 30 seconden op deze pagina zit. Alles goed?',
+  'Mijn AI-sensoren detecteren dat je al even op deze pagina zit. Alles goed?',
   'Wist je dat ik niet echt besta? Wacht... wie zegt dit dan? 🤔',
   'WAARSCHUWING: je anime-deficiëntie is kritiek. Sluit je aan bij de Discord. Nu.',
 ]
@@ -59,6 +65,10 @@ const dismiss = () => {
 }
 
 onMounted(() => {
+  isMobile.value = window.innerWidth < 768 || 'ontouchstart' in window
+  // Show sooner on mobile (15s) than desktop (30s)
+  const delay = isMobile.value ? 15000 : 30000
+
   timeout = setTimeout(() => {
     message.value = messages[Math.floor(Math.random() * messages.length)]
     isVisible.value = true
@@ -71,7 +81,7 @@ onMounted(() => {
         dismiss()
       }
     }, 80)
-  }, 30000)
+  }, delay)
 })
 
 onUnmounted(() => {
@@ -89,10 +99,10 @@ onUnmounted(() => {
 }
 .notif-enter-from {
   opacity: 0;
-  transform: translateX(100px) scale(0.8);
+  transform: translateY(-30px);
 }
 .notif-leave-to {
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateY(-30px);
 }
 </style>

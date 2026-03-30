@@ -7,7 +7,7 @@
           <span class="font-display font-bold text-xl sm:text-2xl bg-gradient-to-r from-primary-400 to-accent-blue bg-clip-text text-transparent leading-none truncate group-hover:from-primary-300 group-hover:to-accent-gold transition-all duration-300">
             DAIC
           </span>
-          <span class="badge-flip hidden xl:inline-flex px-1.5 py-0.5 text-[8px] font-semibold tracking-wider rounded-full bg-primary-600/20 text-primary-300 border border-primary-500/30 whitespace-nowrap group-hover:border-primary-400/60 group-hover:bg-primary-600/40 transition-all duration-300">
+          <span class="badge-flip hidden md:inline-flex px-1.5 py-0.5 text-[8px] font-semibold tracking-wider rounded-full bg-primary-600/20 text-primary-300 border border-primary-500/30 whitespace-nowrap group-hover:border-primary-400/60 group-hover:bg-primary-600/40 transition-all duration-300">
             <span class="badge-flip-front">AI FIRST</span>
             <span class="badge-flip-back">1 APRIL</span>
           </span>

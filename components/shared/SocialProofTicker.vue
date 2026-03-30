@@ -3,7 +3,7 @@
     <Transition name="ticker">
       <div
         v-if="isVisible"
-        class="fixed bottom-6 right-6 z-40 max-w-xs bg-dark-800 border border-dark-600 rounded-xl p-3 shadow-2xl shadow-black/40 flex items-center gap-3"
+        class="fixed bottom-6 left-6 right-6 md:left-auto md:right-6 z-40 md:max-w-xs bg-dark-800 border border-dark-600 rounded-xl p-3 shadow-2xl shadow-black/40 flex items-center gap-3"
       >
         <div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary-600 to-accent-blue flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
           {{ buyer.charAt(0) }}

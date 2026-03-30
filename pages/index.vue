@@ -13,8 +13,9 @@
     <FakeNotification />
     <AmeliaFollower />
     <SocialProofTicker />
+    <ScrollRevealHint />
     <main class="flex flex-col">
-      <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-dark-900 via-dark-900 to-dark-800 overflow-hidden pt-16">
+      <section class="relative min-h-[80vh] md:min-h-screen flex items-center justify-center bg-gradient-to-b from-dark-900 via-dark-900 to-dark-800 overflow-hidden pt-10 md:pt-16">
         <div class="absolute inset-0 overflow-hidden">
           <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary-600/10 rounded-full blur-3xl" />
           <div class="absolute top-20 right-0 w-64 h-64 bg-accent-blue/5 rounded-full blur-3xl" />
@@ -22,8 +23,8 @@
         </div>
 
         <div class="container mx-auto px-4 relative z-10">
-          <div class="max-w-4xl mx-auto text-center space-y-8 py-20">
-            <div class="flex justify-center mb-8 animate-fade-in">
+          <div class="max-w-4xl mx-auto text-center space-y-6 md:space-y-8 py-8 md:py-20">
+            <div class="flex justify-center mb-4 md:mb-8 animate-fade-in">
               <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-600/20 to-accent-blue/20 flex items-center justify-center border border-primary-600/30 backdrop-blur-sm">
                 <Logo class="w-12 h-12" />
               </div>
@@ -117,6 +118,7 @@ import FakeAILoader from '~/components/shared/FakeAILoader.vue'
 import FakeNotification from '~/components/shared/FakeNotification.vue'
 import AmeliaFollower from '~/components/shared/AmeliaFollower.vue'
 import SocialProofTicker from '~/components/shared/SocialProofTicker.vue'
+import ScrollRevealHint from '~/components/shared/ScrollRevealHint.vue'
 
 // Show banner after April 1st 2026
 const isAfterAprilFools = computed(() => {
