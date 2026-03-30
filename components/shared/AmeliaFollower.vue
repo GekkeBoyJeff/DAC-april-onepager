@@ -7,7 +7,7 @@
   >
     <div class="relative">
       <img
-        src="/mascottes/amelia-hug.png"
+        src="./mascottes/amelia-hug.png"
         alt=""
         class="w-16 h-16 rounded-full border-2 border-primary-500/40 shadow-lg shadow-primary-900/40 object-cover"
         :style="{ transform: `scaleX(${lookDirection})` }"
