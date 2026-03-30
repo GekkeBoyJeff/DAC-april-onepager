@@ -14,11 +14,11 @@
         <h2 class="text-xl font-display font-bold text-dark-100">Winkelmand</h2>
         <button
           @click="cart.closeCart()"
-          class="p-2 hover:bg-dark-800 rounded-lg transition-colors"
+          class="p-2 text-dark-300 hover:text-dark-100 hover:bg-dark-800 rounded-lg transition-colors"
           aria-label="Winkelmand sluiten"
         >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
@@ -45,15 +45,15 @@
             <div class="flex items-center gap-2">
               <button
                 @click="cart.updateItemQuantity(item.product.id, item.quantity - 1)"
-                class="p-1 hover:bg-dark-700 rounded transition-colors"
+                class="p-1 text-dark-300 hover:text-dark-100 hover:bg-dark-700 rounded transition-colors"
                 aria-label="Aantal verlagen"
               >
                 −
               </button>
-              <span class="w-8 text-center text-dark-100">{{ item.quantity }}</span>
+              <span class="w-8 text-center text-dark-100 font-medium">{{ item.quantity }}</span>
               <button
                 @click="cart.updateItemQuantity(item.product.id, item.quantity + 1)"
-                class="p-1 hover:bg-dark-700 rounded transition-colors"
+                class="p-1 text-dark-300 hover:text-dark-100 hover:bg-dark-700 rounded transition-colors"
                 aria-label="Aantal verhogen"
               >
                 +
@@ -77,8 +77,8 @@
       <!-- Footer -->
       <div v-if="cart.itemsArray.length > 0" class="border-t border-dark-700 p-6 space-y-4">
         <div class="flex justify-between items-center text-lg font-bold">
-          <span>Totaal:</span>
-          <span class="text-primary-300">{{ cart.cartTotalDisplay }}</span>
+          <span class="text-dark-200">Totaal:</span>
+          <span class="text-primary-400">{{ cart.cartTotalDisplay }}</span>
         </div>
         <Button variant="primary" size="lg" class="w-full" @click="cart.checkout()">
           Verder naar afrekenen
@@ -97,11 +97,11 @@
       <h2 class="text-xl font-display font-bold text-dark-100">Winkelmand</h2>
       <button
         @click="cart.closeCart()"
-        class="p-2 hover:bg-dark-800 rounded-lg transition-colors"
+        class="p-2 text-dark-300 hover:text-dark-100 hover:bg-dark-800 rounded-lg transition-colors"
         aria-label="Winkelmand sluiten"
       >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
@@ -126,14 +126,14 @@
           <div class="flex items-center gap-1">
             <button
               @click="cart.updateItemQuantity(item.product.id, item.quantity - 1)"
-              class="px-1.5 hover:bg-dark-700 rounded text-xs"
+              class="px-1.5 hover:bg-dark-700 rounded text-xs text-dark-300 hover:text-dark-100"
             >
               −
             </button>
-            <span class="w-6 text-center text-xs">{{ item.quantity }}</span>
+            <span class="w-6 text-center text-xs text-dark-100 font-medium">{{ item.quantity }}</span>
             <button
               @click="cart.updateItemQuantity(item.product.id, item.quantity + 1)"
-              class="px-1.5 hover:bg-dark-700 rounded text-xs"
+              class="px-1.5 hover:bg-dark-700 rounded text-xs text-dark-300 hover:text-dark-100"
             >
               +
             </button>
@@ -151,8 +151,8 @@
     <!-- Footer -->
     <div v-if="cart.itemsArray.length > 0" class="border-t border-dark-700 p-4 space-y-3">
       <div class="flex justify-between items-center font-bold">
-        <span>Totaal:</span>
-        <span class="text-primary-300">{{ cart.cartTotalDisplay }}</span>
+        <span class="text-dark-200">Totaal:</span>
+        <span class="text-primary-400">{{ cart.cartTotalDisplay }}</span>
       </div>
       <Button variant="primary" size="md" class="w-full" @click="cart.checkout()">
         Afrekenen

@@ -33,16 +33,16 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      crawlLinks: true,
       routes: ['/'],
+      crawlLinks: false,
     },
   },
 
   // Set base path for GitHub Pages (adjust if using subdirectory)
-  // base: '/DAC-april-onepager/',
+  base: '/DAC-april-onepager/',
 
-  // Disable server features for static export
-  ssr: true,
+  // SPA mode for interactive features like cart
+  ssr: false,
 
   typescript: {
     strict: false,
