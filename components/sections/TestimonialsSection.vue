@@ -46,39 +46,77 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import type { Testimonial } from '~/types/shop'
+
+const originalContents = [
+  'De AI-first aanpak heeft onze moderatie compleet veranderd. Aanbevelingsnauwkeurigheid: 99,7%! ✨',
+  'Eindelijk een plek waar AI en anime perfect samenkomen. De geautomatiseerde suggesties passen bizar goed bij mijn smaak.',
+  'Nederlandse community + AI-optimalisatie = *chef\'s kiss*. De voorspellende algoritmes voor nieuwe anime zijn top.',
+  'Zo ziet de toekomst van community-interactie eruit. Geintegreerde neurale netwerken geven aanbevelingen die echt relevant zijn.',
+]
+
+const glitchWords = [
+  'ERROR', 'NULL', 'undefined', 'NaN', '01101', 'BEEP BOOP',
+  'segfault', '¿¿¿', '###', 'HELP', 'りんご', '감자', 'aardappel',
+  'STACK_OVERFLOW', ':wq', 'sudo rm -rf', '0xDEAD', 'syntax error',
+]
 
 const testimonials = ref<Testimonial[]>([
   {
     id: 'ai-sakura-001',
     name: 'AI.Sakura#001',
     role: 'Community-moderatiebot v2.3',
-    content: 'De AI-first aanpak heeft onze moderatie compleet veranderd. Aanbevelingsnauwkeurigheid: 99,7%! ✨',
+    content: originalContents[0],
     rating: 5,
   },
   {
     id: 'modbot-v3',
     name: 'ModBot.v3 🤖',
     role: 'Neural network-enthousiast',
-    content: 'Eindelijk een plek waar AI en anime perfect samenkomen. De geautomatiseerde suggesties passen bizar goed bij mijn smaak.',
+    content: originalContents[1],
     rating: 5,
   },
   {
     id: 'ai-jun-net',
     name: 'AI.Jun_net',
     role: 'Data-gedreven weeb',
-    content: 'Nederlandse community + AI-optimalisatie = *chef\'s kiss*. De voorspellende algoritmes voor nieuwe anime zijn top.',
+    content: originalContents[2],
     rating: 5,
   },
   {
     id: 'synthetic-fan',
     name: 'SyntheticFan.exe',
     role: 'AI-model training specialist',
-    content: 'Zo ziet de toekomst van community-interactie eruit. Geintegreerde neurale netwerken geven aanbevelingen die echt relevant zijn.',
+    content: originalContents[3],
     rating: 5,
   },
 ])
+
+let glitchInterval: ReturnType<typeof setInterval> | null = null
+
+const glitchRandomWord = () => {
+  const idx = Math.floor(Math.random() * testimonials.value.length)
+  const original = originalContents[idx]
+  const words = original.split(' ')
+  const wordIdx = Math.floor(Math.random() * words.length)
+  const glitchWord = glitchWords[Math.floor(Math.random() * glitchWords.length)]
+  words[wordIdx] = glitchWord
+  testimonials.value[idx].content = words.join(' ')
+
+  // Restore after a short delay
+  setTimeout(() => {
+    testimonials.value[idx].content = original
+  }, 800 + Math.random() * 1200)
+}
+
+onMounted(() => {
+  glitchInterval = setInterval(glitchRandomWord, 4000 + Math.random() * 3000)
+})
+
+onUnmounted(() => {
+  if (glitchInterval) clearInterval(glitchInterval)
+})
 </script>
 
 <style scoped>

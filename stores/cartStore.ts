@@ -94,6 +94,8 @@ export const useCartStore = defineStore('cart', () => {
     window.open(RICKROLL_URL, '_blank')
     clearCart()
     closeCart()
+    // Trigger reveal overlay
+    window.dispatchEvent(new CustomEvent('daic-rickrolled'))
   }
 
   return {

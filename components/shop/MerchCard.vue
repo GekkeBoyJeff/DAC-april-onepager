@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group relative bg-gradient-to-br from-dark-800 to-dark-900 rounded-xl border border-dark-700 hover:border-primary-600/50 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/40 hover:-translate-y-2 hover:scale-[1.02] animate-fade-in"
+    class="group relative bg-gradient-to-br from-dark-800 to-dark-900 rounded-xl border border-dark-700 hover:border-primary-600/50 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/40 hover:-translate-y-2 hover:scale-[1.02] animate-fade-in hover:cursor-hook"
   >
     <div class="absolute -inset-1 bg-gradient-to-r from-primary-600/0 via-primary-600/0 to-primary-600/0 group-hover:from-primary-600/20 group-hover:to-accent-blue/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
     <div class="relative h-56 bg-dark-700 overflow-hidden flex items-center justify-center">
@@ -34,10 +34,10 @@
         {{ product.description }}
       </p>
       <div class="flex items-end justify-between pt-2">
-        <div>
+        <div @mouseenter="onPriceHover" @mouseleave="onPriceLeave">
           <p class="text-xs text-dark-500 mb-1">Prijs</p>
-          <p class="text-xl font-bold bg-gradient-to-r from-accent-gold to-accent-blue bg-clip-text text-transparent group-hover:animate-gradient-shift" style="background-size: 200% 200%">
-            {{ product.priceDisplay }}
+          <p class="text-xl font-bold bg-gradient-to-r from-accent-gold to-accent-blue bg-clip-text text-transparent group-hover:animate-gradient-shift transition-all duration-300" style="background-size: 200% 200%">
+            {{ displayPrice }}
           </p>
         </div>
         <button
@@ -56,6 +56,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import type { Product } from '~/types/shop'
 import { useCartStore } from '~/stores/cartStore'
 
@@ -66,6 +67,23 @@ interface Props {
 const props = defineProps<Props>()
 const cart = useCartStore()
 const isNsfwFigure = props.product.id === 'amelia-figure'
+const displayPrice = ref(props.product.priceDisplay)
+let hoverCount = 0
+
+const onPriceHover = () => {
+  hoverCount++
+  if (hoverCount >= 2) {
+    const inflated = props.product.price * (1 + hoverCount * 0.15)
+    displayPrice.value = new Intl.NumberFormat('nl-NL', {
+      style: 'currency',
+      currency: 'EUR',
+    }).format(inflated)
+  }
+}
+
+const onPriceLeave = () => {
+  // Keep the inflated price — no going back!
+}
 
 const addToCart = () => {
   cart.addItem(props.product, 1)

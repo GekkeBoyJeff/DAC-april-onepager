@@ -1,7 +1,18 @@
 <template>
   <div class="min-h-screen bg-dark-900">
+    <div v-if="isAfterAprilFools" class="bg-gradient-to-r from-primary-600 to-accent-blue text-white text-center py-2.5 px-4 text-sm font-medium relative z-50">
+      Dit was een 1 april grap van de Dutch Anime Community.
+      <a href="https://discord.gg/dutchanimecommunity" target="_blank" rel="noopener noreferrer" class="underline font-bold hover:text-white/80 transition-colors ml-1">
+        Join de echte community!
+      </a>
+    </div>
     <Header />
     <Cart />
+    <AprilFoolsReveal />
+    <FakeAILoader />
+    <FakeNotification />
+    <AmeliaFollower />
+    <SocialProofTicker />
     <main class="flex flex-col">
       <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-dark-900 via-dark-900 to-dark-800 overflow-hidden pt-16">
         <div class="absolute inset-0 overflow-hidden">
@@ -19,7 +30,7 @@
             </div>
             <div class="space-y-4 animate-slide-up" style="animation-delay: 0.1s">
               <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight">
-                <span class="bg-gradient-to-r from-primary-300 via-accent-blue to-accent-gold bg-clip-text text-transparent">
+                <span class="bg-gradient-to-r from-primary-300 via-accent-blue to-accent-gold bg-clip-text text-transparent glitch-text" data-text="AI FIRST Anime Server van Nederland">
                   AI FIRST Anime Server van Nederland
                 </span>
               </h1>
@@ -88,6 +99,7 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import Header from '~/components/shared/Header.vue'
 import Logo from '~/components/shared/Logo.vue'
 import Footer from '~/components/shared/Footer.vue'
@@ -100,6 +112,17 @@ import TestimonialsSection from '~/components/sections/TestimonialsSection.vue'
 import MerchSection from '~/components/sections/MerchSection.vue'
 import FAQSection from '~/components/sections/FAQSection.vue'
 import Cart from '~/components/shop/Cart.vue'
+import AprilFoolsReveal from '~/components/shared/AprilFoolsReveal.vue'
+import FakeAILoader from '~/components/shared/FakeAILoader.vue'
+import FakeNotification from '~/components/shared/FakeNotification.vue'
+import AmeliaFollower from '~/components/shared/AmeliaFollower.vue'
+import SocialProofTicker from '~/components/shared/SocialProofTicker.vue'
+
+// Show banner after April 1st 2026
+const isAfterAprilFools = computed(() => {
+  const now = new Date()
+  return now > new Date('2026-04-01T23:59:59')
+})
 </script>
 
 <style scoped>
