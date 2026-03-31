@@ -5,13 +5,13 @@
     </div>
 
     <div class="container mx-auto px-4 relative z-10">
-      <div class="text-center mb-8 animate-scale-in">
-        <h2 class="text-3xl md:text-4xl font-display font-bold mb-3 animate-slide-up">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-display font-bold mb-3">
           <span class="bg-gradient-to-r from-accent-gold to-primary-300 bg-clip-text text-transparent inline-block animate-gradient-shift" style="background-size: 200% 200%">
             Converenties 2026
           </span>
         </h2>
-        <p class="text-base text-dark-300 max-w-2xl mx-auto animate-slide-up" style="animation-delay: 0.1s">
+        <p class="text-base text-dark-300 max-w-2xl mx-auto">
           Ontmoet de DAIC-community en ervaar de toekomst van anime: Amelia AI en ons baanbrekend dating sim game.
         </p>
       </div>
@@ -20,8 +20,7 @@
         <article
           v-for="(event, index) in conventions"
           :key="event.slug"
-          class="rounded-xl border border-primary-700/30 bg-dark-800/60 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20 hover:-translate-y-2 hover:scale-[1.02] group animate-slide-up cursor-pointer"
-          :style="{ 'animation-delay': `${0.2 + index * 0.1}s` }"
+          class="rounded-xl border border-primary-700/30 bg-dark-800/60 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20 hover:-translate-y-2 hover:scale-[1.02] group cursor-pointer"
         >
           <div class="h-32 md:h-36 bg-dark-900 overflow-hidden relative">
             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-dark-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />

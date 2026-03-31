@@ -5,7 +5,7 @@
     </div>
 
     <div class="container mx-auto px-4 relative z-10">
-      <div class="text-center mb-16 animate-fade-in">
+      <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-display font-bold mb-4">
           <span class="bg-gradient-to-r from-primary-300 to-accent-blue bg-clip-text text-transparent">
             Community reacties
@@ -20,7 +20,6 @@
           v-for="(testimonial, index) in testimonials"
           :key="testimonial.id"
           class="relative p-6 rounded-lg bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300"
-          :style="`animation: slideUp 0.6s ease-out forwards; animation-delay: ${0.1 * (index + 1)}s; opacity: 0`"
         >
           <div class="flex gap-1 mb-4" role="img" :aria-label="`${testimonial.rating} van 5 sterren`">
             <span v-for="n in testimonial.rating" :key="`star-${n}`" class="text-accent-gold" aria-hidden="true">★</span>
@@ -119,15 +118,3 @@ onUnmounted(() => {
 })
 </script>
 
-<style scoped>
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>

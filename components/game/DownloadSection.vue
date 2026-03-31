@@ -7,7 +7,7 @@
 
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-3xl mx-auto">
-        <div class="space-y-8 animate-fade-in">
+        <div class="space-y-8">
           <div>
             <span class="text-sm font-semibold text-accent-blue uppercase tracking-wider">Speciale release</span>
             <h2 class="text-4xl md:text-5xl font-display font-bold mt-2 mb-4">
@@ -59,7 +59,7 @@
             <p class="text-sm text-dark-400">💾 Download voor Windows of macOS</p>
             <div class="flex gap-3 flex-wrap">
               <a
-                href="https://drive.google.com/uc?export=download&id=WINDOWS_ID"
+                href="https://discord.com/channels/581163192965791745/581163961970458625"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold transition-all duration-250 hover:shadow-lg hover:shadow-primary-900/50 transform hover:scale-105"
@@ -70,7 +70,7 @@
                 Download voor Windows
               </a>
               <a
-                href="https://drive.google.com/uc?export=download&id=MAC_ID"
+                href="https://discord.com/channels/581163192965791745/581163961970458625"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-dark-700 hover:bg-dark-600 text-dark-100 font-semibold transition-all duration-250 border border-dark-600 hover:border-primary-600/50"

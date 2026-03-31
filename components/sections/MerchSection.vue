@@ -5,13 +5,13 @@
     </div>
 
     <div class="container mx-auto px-4 relative z-10">
-      <div class="text-center mb-12 animate-scale-in">
-        <h2 class="text-4xl md:text-5xl font-display font-bold mb-4 animate-slide-up">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-display font-bold mb-4">
           <span class="bg-gradient-to-r from-accent-gold to-primary-300 bg-clip-text text-transparent inline-block animate-gradient-shift" style="background-size: 200% 200%">
             Officiele DAIC shop
           </span>
         </h2>
-        <p class="text-lg text-dark-300 mb-6 animate-slide-up" style="animation-delay: 0.1s">
+        <p class="text-lg text-dark-300 mb-6">
           Welkom in onze nieuwe website en webshop! Steun de community met exclusieve Amelia-merchandise.
         </p>
       </div>
@@ -19,13 +19,11 @@
         <div
           v-for="(product, index) in products"
           :key="product.id"
-          class="animate-slide-up"
-          :style="{ 'animation-delay': `${0.2 + index * 0.08}s` }"
         >
           <MerchCard :product="product" />
         </div>
       </div>
-      <div class="mt-12 p-6 rounded-lg bg-dark-700/50 border border-dark-600 backdrop-blur-sm hover:border-primary-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-900/20 hover:bg-dark-700/70 animate-fade-in">
+      <div class="mt-12 p-6 rounded-lg bg-dark-700/50 border border-dark-600 backdrop-blur-sm hover:border-primary-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-900/20 hover:bg-dark-700/70">
         <p class="text-dark-300 text-center hover:text-dark-200 transition-colors duration-300">
           <span class="text-accent-blue font-semibold animate-bounce-slow">💳 Afrekenen:</span>
           Voeg items toe aan je winkelmand en klik op "Verder naar afrekenen" voor een speciale verrassing.
@@ -84,15 +82,3 @@ const products = ref<Product[]>([
 ])
 </script>
 
-<style scoped>
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-</style>

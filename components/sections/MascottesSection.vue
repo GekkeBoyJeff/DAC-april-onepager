@@ -6,13 +6,13 @@
     </div>
 
     <div class="container mx-auto px-4 relative z-10">
-      <div class="text-center mb-12 animate-scale-in">
-        <h2 class="text-4xl md:text-5xl font-display font-bold mb-4 animate-slide-up">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-display font-bold mb-4">
           <span class="bg-gradient-to-r from-primary-300 via-accent-blue to-accent-gold bg-clip-text text-transparent inline-block animate-gradient-shift" style="background-size: 200% 200%">
             Mascottes van de Community
           </span>
         </h2>
-        <p class="text-lg text-dark-300 max-w-2xl mx-auto animate-slide-up" style="animation-delay: 0.1s">
+        <p class="text-lg text-dark-300 max-w-2xl mx-auto">
           Amelia in verschillende stijlen, direct vanuit onze community-collectie.
         </p>
       </div>
@@ -21,8 +21,7 @@
         <article
           v-for="(item, index) in mascottes"
           :key="item.src"
-          class="group rounded-xl border border-primary-700/30 bg-dark-800/60 backdrop-blur-sm p-4 transition-all duration-300 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20 hover:-translate-y-3 cursor-pointer animate-fade-in"
-          :style="{ 'animation-delay': `${0.2 + index * 0.08}s` }"
+          class="group rounded-xl border border-primary-700/30 bg-dark-800/60 backdrop-blur-sm p-4 transition-all duration-300 hover:border-primary-500/60 hover:shadow-xl hover:shadow-primary-600/20 hover:-translate-y-3 cursor-pointer"
         >
           <figure>
             <div class="aspect-[4/5] rounded-lg bg-dark-900/70 border border-dark-700 overflow-hidden group-hover:border-primary-500/40 transition-all duration-300 relative">

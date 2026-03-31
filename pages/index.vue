@@ -25,12 +25,12 @@
 
         <div class="container mx-auto px-4 relative z-10">
           <div class="hero-content max-w-4xl mx-auto text-center space-y-6 md:space-y-8 py-8 md:py-20">
-            <div class="flex justify-center mb-4 md:mb-8 animate-fade-in">
+            <div class="flex justify-center mb-4 md:mb-8">
               <div class="w-20 h-20 rounded-xl bg-gradient-to-br from-primary-600/20 to-accent-blue/20 flex items-center justify-center border border-primary-600/30 backdrop-blur-sm">
                 <Logo class="w-12 h-12" />
               </div>
             </div>
-            <div class="space-y-4 animate-slide-up" style="animation-delay: 0.1s">
+            <div class="space-y-4">
               <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight">
                 <span class="bg-gradient-to-r from-primary-300 via-accent-blue to-accent-gold bg-clip-text text-transparent glitch-text" data-text="AI FIRST Anime Server van Nederland">
                   AI FIRST Anime Server van Nederland
@@ -40,11 +40,11 @@
                 De Dutch Anime Community als AI FIRST server
               </p>
             </div>
-            <p class="text-lg text-dark-400 max-w-2xl mx-auto leading-relaxed animate-fade-in" style="animation-delay: 0.2s">
+            <p class="text-lg text-dark-400 max-w-2xl mx-auto leading-relaxed">
               Welkom bij <span class="text-primary-300 font-semibold">DAIC</span>: de AI FIRST anime-community waar moderatie,
               aanbevelingen en interactie worden aangestuurd door slimme AI-tools.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8 animate-scale-in" style="animation-delay: 0.3s">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
               <Button size="lg" href="#about" class="group">
                 Meer informatie
                 <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@
                 </svg>
               </Button>
             </div>
-            <div class="pt-12 animate-bounce" style="animation-delay: 0.5s">
+            <div class="pt-12 animate-bounce">
               <svg class="w-6 h-6 mx-auto text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>
@@ -130,37 +130,6 @@ const isAfterAprilFools = computed(() => {
 </script>
 
 <style scoped>
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 @keyframes bounce {
   0%,
   100% {
@@ -169,20 +138,6 @@ const isAfterAprilFools = computed(() => {
   50% {
     transform: translateY(-8px);
   }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-in-out forwards;
-}
-
-.animate-slide-up {
-  animation: slideUp 0.6s ease-out forwards;
-  opacity: 0;
-}
-
-.animate-scale-in {
-  animation: scaleIn 0.5s ease-out forwards;
-  opacity: 0;
 }
 
 .animate-bounce {
@@ -214,8 +169,7 @@ const isAfterAprilFools = computed(() => {
   }
 
   /* Hide non-essential elements */
-  .hero-section .animate-bounce,
-  .hero-section .animate-fade-in:first-child {
+  .hero-section .animate-bounce {
     display: none;
   }
 

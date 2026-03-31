@@ -5,7 +5,7 @@
     </div>
 
     <div class="container mx-auto px-4 relative z-10">
-      <div class="text-center mb-16 animate-fade-in">
+      <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-display font-bold mb-4">
           <span class="bg-gradient-to-r from-primary-300 to-accent-blue bg-clip-text text-transparent">
             AI-functies
@@ -18,7 +18,6 @@
       <div class="grid md:grid-cols-2 gap-6">
         <article
           class="group relative p-8 rounded-lg bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
-          style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.1s; opacity: 0"
         >
           <div class="absolute inset-0 rounded-lg bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
           <div class="relative space-y-4">
@@ -35,7 +34,6 @@
         </article>
         <article
           class="group relative p-8 rounded-lg bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
-          style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0"
         >
           <div class="absolute inset-0 rounded-lg bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
           <div class="relative space-y-4">
@@ -52,7 +50,6 @@
         </article>
         <article
           class="group relative p-8 rounded-lg bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
-          style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.3s; opacity: 0"
         >
           <div class="absolute inset-0 rounded-lg bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
           <div class="relative space-y-4">
@@ -69,7 +66,6 @@
         </article>
         <article
           class="group relative p-8 rounded-lg bg-gradient-to-br from-dark-800 to-dark-900 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-900/20"
-          style="animation: slideUp 0.6s ease-out forwards; animation-delay: 0.4s; opacity: 0"
         >
           <div class="absolute inset-0 rounded-lg bg-gradient-to-br from-primary-600/0 to-accent-blue/0 group-hover:from-primary-600/10 group-hover:to-accent-blue/10 transition-colors" />
           <div class="relative space-y-4">
@@ -93,15 +89,3 @@
 // Features section component
 </script>
 
-<style scoped>
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>

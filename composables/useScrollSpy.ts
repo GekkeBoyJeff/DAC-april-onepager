@@ -4,23 +4,17 @@ export const useScrollSpy = () => {
   const activeSection = ref<string>('')
 
   onMounted(() => {
-    // Trigger animations when elements come into view (10%)
-    const animationObserver = new IntersectionObserver(
+    // Fade in entire sections when 20% visible
+    const sectionObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
-            entry.target.classList.add('animate-in')
+          if (entry.isIntersecting && !entry.target.classList.contains('section-visible')) {
+            entry.target.classList.add('section-visible')
           }
         })
       },
-      { threshold: 0.05 }
+      { threshold: 0.2 }
     )
-
-    // Observe all elements with animation classes (including within sections)
-    const animatedElements = document.querySelectorAll('[class*="animate-slide-up"], [class*="animate-slide-down"], [class*="animate-slide-left"], [class*="animate-slide-right"], [class*="animate-fade-in"], [class*="animate-scale-in"], [class*="animate-rotate-in"], [class*="animate-flip"]')
-    animatedElements.forEach((el) => {
-      animationObserver.observe(el)
-    })
 
     // Scroll spy for nav
     const scrollSpy = new IntersectionObserver(
@@ -35,6 +29,7 @@ export const useScrollSpy = () => {
     )
 
     document.querySelectorAll('section[id]').forEach((section) => {
+      sectionObserver.observe(section)
       scrollSpy.observe(section)
     })
   })

@@ -61,25 +61,12 @@ section[id] {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>🎣</text></svg>") 4 4, pointer;
 }
 
-/* Pause all entrance animations by default, run when animate-in class added */
-[class*="animate-slide-up"],
-[class*="animate-slide-down"],
-[class*="animate-slide-left"],
-[class*="animate-slide-right"],
-[class*="animate-fade-in"],
-[class*="animate-scale-in"],
-[class*="animate-rotate-in"],
-[class*="animate-flip"] {
-  animation-play-state: paused;
+/* Section fade-in: hidden by default, fade in when 20% visible */
+section[id] {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
 }
 
-[class*="animate-slide-up"].animate-in,
-[class*="animate-slide-down"].animate-in,
-[class*="animate-slide-left"].animate-in,
-[class*="animate-slide-right"].animate-in,
-[class*="animate-fade-in"].animate-in,
-[class*="animate-scale-in"].animate-in,
-[class*="animate-rotate-in"].animate-in,
-[class*="animate-flip"].animate-in {
-  animation-play-state: running;
+section[id].section-visible {
+  opacity: 1;
 }

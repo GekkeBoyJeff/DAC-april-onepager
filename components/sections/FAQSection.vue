@@ -5,13 +5,13 @@
     </div>
 
     <div class="container mx-auto px-4 relative z-10">
-      <div class="text-center mb-16 animate-scale-in">
-        <h2 class="text-4xl md:text-5xl font-display font-bold mb-4 animate-slide-up">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display font-bold mb-4">
           <span class="bg-gradient-to-r from-primary-300 to-accent-blue bg-clip-text text-transparent inline-block animate-gradient-shift" style="background-size: 200% 200%">
             FAQ
           </span>
         </h2>
-        <p class="text-lg text-dark-300 animate-slide-up" style="animation-delay: 0.1s">
+        <p class="text-lg text-dark-300">
           Veelgestelde vragen over DAIC
         </p>
       </div>
@@ -19,8 +19,7 @@
         <details
           v-for="(item, index) in faqs"
           :key="index"
-          class="group rounded-lg bg-dark-800 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-900/20 hover:bg-dark-800/80 animate-slide-up"
-          :style="{ 'animation-delay': `${0.2 + index * 0.08}s` }"
+          class="group rounded-lg bg-dark-800 border border-dark-700 hover:border-primary-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-900/20 hover:bg-dark-800/80"
         >
           <summary class="flex items-center justify-between p-6 font-semibold text-dark-100 list-none cursor-pointer group-hover:text-primary-300 transition-colors duration-300">
             <span>{{ item.question }}</span>
@@ -33,7 +32,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
           </summary>
-          <p class="px-6 pb-6 text-dark-400 leading-relaxed animate-slide-up group-open:text-dark-300 transition-colors duration-300" style="animation-delay: 0.1s">{{ item.answer }}</p>
+          <p class="px-6 pb-6 text-dark-400 leading-relaxed group-open:text-dark-300 transition-colors duration-300">{{ item.answer }}</p>
         </details>
       </div>
     </div>
@@ -64,17 +63,6 @@ const faqs = ref([
 </script>
 
 <style scoped>
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 details summary::-webkit-details-marker {
   display: none;
 }
